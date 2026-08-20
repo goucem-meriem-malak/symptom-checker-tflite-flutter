@@ -6,6 +6,25 @@ An end-to-end pipeline: trains a neural network on symptom/disease data, convert
 
 Most "disease predictor" projects stop at a notebook with a printed accuracy score. This one goes further: **the full path from a trained model to a working mobile app**, including the real debugging that comes with it (model format incompatibility, TFLite op-version mismatches, asset loading).
 
+## Architecture
+
+![Pipeline architecture](model_training/outputs/architecture.svg)
+
+Blue stages run in Python/Kaggle during training; teal stages are the on-device Flutter app. The `.tflite` model, `symptom_schema.json`, and `disease_precautions.json` are the three artifacts that cross from one side to the other.
+
+## App screenshots
+
+<table>
+  <tr>
+    <td><img src="screenshots/symptom_selection.png" width="280" alt="Symptom selector screen with several symptoms checked"/></td>
+    <td><img src="screenshots/prediction_result.png" width="280" alt="Prediction result screen showing predicted condition, confidence score, and precautions"/></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Selecting symptoms</sub></td>
+    <td align="center"><sub>Prediction + precautions</sub></td>
+  </tr>
+</table>
+
 ## Project structure
 
 - **`model_training/`** — Python/Keras training pipeline that builds a classifier over ~130 symptoms mapped to ~40 diseases, and exports it as a `.tflite` file for mobile deployment.
