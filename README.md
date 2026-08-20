@@ -16,8 +16,8 @@ Blue stages run in Python/Kaggle during training; teal stages are the on-device 
 
 <table>
   <tr>
-    <td><img src="screenshots/symptom_selection.png" width="280" alt="Symptom selector screen with several symptoms checked"/></td>
-    <td><img src="screenshots/prediction_result.png" width="280" alt="Prediction result screen showing predicted condition, confidence score, and precautions"/></td>
+    <td><img src="screenshots/symptom_selection.jpg" width="280" alt="Symptom selector screen with several symptoms checked"/></td>
+    <td><img src="screenshots/prediction_result.jpg" width="280" alt="Prediction result screen showing predicted condition, confidence score, and precautions"/></td>
   </tr>
   <tr>
     <td align="center"><sub>Selecting symptoms</sub></td>
