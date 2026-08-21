@@ -81,4 +81,4 @@ Requires the three files above to already be present in `flutter_app/assets/` (a
 
 ## License
 
-Dataset: check the original Kaggle dataset's license before redistribution. Code in this repo: MIT (or your preferred license — update this line).
+Dataset: check the original Kaggle dataset's license before redistribution. Code in this repo: MIT — see [LICENSE](LICENSE).
